@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+*{
+    margin: auto;
+}
+
+body {
+    background-color: #3cda83;
+}
+
+body h1, h2, h3 {
+    font-family: sans-serif;
+}
+
+header {
+    background-image:linear-gradient(to bottom, #3cda83, #195b38);
+    padding: 15px;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.358);
+}
+header h1 {
+    text-align: center;
+    padding: 20px;
+}
+header p {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+}
+header a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+.verde {
+    text-decoration: none;
+    font-weight: bold;
+    color: #195b38;
+}
+
+.titulo {
+    background-image: linear-gradient(to right, #84E1AD, #fff);
+    margin: 20px 15px;
+}
+
+main {
+    max-width: 800px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.326);
+}
+main h1 {
+    padding: 20px 15px;
+    font-size: 2em;
+}
+main p {
+    padding: 15px 15px;
+}
+
+#video {
+    background-color: #195b38;
+    text-align: center;
+    height: 400px;
+}
+#video > iframe{
+    max-width: 700px;
+    max-height: 400px;
+    margin: auto;
+}
+
+#extra {
+    margin: 20px;
+    background-color: #b4f9d2;
+    border-radius: 10px;
+}
+#extra h3 {
+    color: white;
+    background-color: #3eb170;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+footer {
+    text-align: center;
+    background-color: #195b38;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

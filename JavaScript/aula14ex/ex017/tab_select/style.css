@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: rgb(72, 75, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: white;
+    max-width: 650px;
+    min-height: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 80px auto;
+    border-radius: 10px;
+
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principal section:last-child {
+   margin: auto;
+}
+
+.principal button {
+    padding: 10px;
+    font-size: 1.3em;
+    margin-top: 26px;
+    margin-left: 30px;
+}
+
+p {
+    margin: 20px 0px 10px 0px;
+}
+
+input {
+    font-size: 1.3em;
+}
+
+select {
+    font-size: 16px;
+    margin: 50px 0px;
+}
