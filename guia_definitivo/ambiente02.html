@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente JS - 02</title>
+    <style>
+        main {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            width: 420px;
+            margin: 10px auto;
+        }
+
+        pre {
+            padding: 10px;
+            background-color: rgb(37, 37, 37);
+            color: rgb(228, 120, 201);
+            font-weight: bold;
+            font-size: 1.1em;
+            width: 420px;
+            margin: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Criando classe de objeto em JS</h1>
+        <p>Código:</p>
+        <pre>
+        function Point(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        var p = new Point(1 ,1);
+        Point.prototype.r = function() {
+            return Math.sqrt(
+                this.x * this.x +
+                this.y * this.y
+            );
+        };
+        
+        console.log(p.r());
+        </pre>
+    </main>
+    <script>
+
+        function Point(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        var p = new Point(1 ,1);
+
+        Point.prototype.r = function() {
+            return Math.sqrt(
+                this.x * this.x + 
+                this.y * this.y
+            );
+        };
+
+        console.log(p.r());
+    </script>
+</body>
+</html>
