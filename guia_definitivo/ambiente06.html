@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente JS - 06</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+
+        main {
+            width: 600px;
+
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            width: 420px;
+            margin: 10px auto;
+        }
+
+        pre {
+            padding: 10px;
+            background-color: rgb(37, 37, 37);
+            color: rgb(228, 120, 201);
+            font-weight: bold;
+            font-size: 1.1em;
+            width: 480px;
+            margin: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>typeof em Date</h1>
+        <p>Código:</p>
+        <pre>
+
+    var now = new Date();
+    console.log(typeof (now + 1));
+    console.log(typeof (now - 1));
+    console.log(now == now.toString());
+    console.log(now > (now -1));
+
+        </pre>
+
+        <script>
+            
+            var now = new Date();                // Cria um objeto Date
+            console.log(typeof (now + 1));       // => "string": + converte datas em strings
+            console.log(typeof (now - 1));       // => "number": – usa conversão de objeto para número
+            console.log(now == now.toString());  // => verdadeiro: conversões de string implícitas e explícitas
+            console.log(now > (now -1));         // => verdadeiro: > converte um objeto Date em número
+        
+        </script>
+
+    </main>
+</body>
+</html>

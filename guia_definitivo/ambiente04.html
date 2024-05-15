@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente JS - 04</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+
+        main {
+            width: 600px;
+
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            width: 420px;
+            margin: 10px auto;
+        }
+
+        pre {
+            padding: 10px;
+            background-color: rgb(37, 37, 37);
+            color: rgb(228, 120, 201);
+            font-weight: bold;
+            font-size: 1.1em;
+            width: 480px;
+            margin: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Criando classe de objeto em JS</h1>
+        <p>Código:</p>
+        <pre>
+
+    var o = {x:1}, p = {x:1};
+    if (o === p ) {
+        console.log("true")
+    } else {
+        console.log("false")
+    };
+
+    var a = [1, 2, 3], b = [1, 2, 3];
+    if (a === b ) {
+        console.log("true")
+    } else {
+        console.log("false")
+    };
+
+    var re = [];
+    for (var i = 0; i < a.length; i++) {
+        if(a[i] === b[i]) 
+            re.push(true);
+        else 
+            re.push(false);
+    }
+
+    console.log(re);
+
+        </pre>
+
+        <script>
+            var o = {x:1}, p = {x:1};
+            if (o === p ) {console.log("true")} else {console.log("false")};
+
+            var a = [1, 2, 3], b = [1, 2, 3];
+            if (a === b ) {console.log("true")} else {console.log("false")};
+
+            var re = [];
+            for (var i = 0; i < a.length; i++) {
+                if(a[i] === b[i]) 
+                    re.push(true);
+                else 
+                    re.push(false);
+            }
+
+            console.log(re);
+        </script>
+
+    </main>
+</body>
+</html>
