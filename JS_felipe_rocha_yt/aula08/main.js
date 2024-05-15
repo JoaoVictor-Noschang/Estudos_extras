@@ -1,27 +1,25 @@
-// JSON
-const todos = [
-    {
-        id: 1,
-        description: "Estudar React",
-        isCompleted: false
-    },
-    {
-        id: 2,
-        description: "Vender cimento",
-        isCompleted: true
-    },
-    {
-        id: 3,
-        description: "Estudar SQL",
-        isCompleted: true
-    }
-];
+// Condicionais
 
-/* converte para JSOn, deixa de ser um objeto e fica um tipo de "string" 
-mas em formato JSON */
-const todosJSON = JSON.stringify(todos);
-console.log(todosJSON);
+const sum = 1 + 1;
 
-//Convertendo para lista novamente
-const todoList = JSON.parse(todosJSON);
-console.log(todoList);
+/*
+if (sum === 2) {
+    console.log("Sum is 2!");
+} else if (sum === 3) {
+    console.log("Sum is 3!");
+} else {
+    console.log("Sum is NOT 2!");
+} */
+
+
+// Operador ternário
+let number = sum === 2 ? 2 : 4;
+
+/*
+if (sum === 2) {
+    number = 2;
+} else {
+    number = 4;
+} */
+
+console.log(number);
